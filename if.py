@@ -12,7 +12,7 @@
 temp = input("Jaka jest temperatura na klimatyzatorze? ")
 
 if temp.isnumeric():
-    temp = float(temp)
+    temp = float(temp)      # rzutowanie
 else:
     print("Wpsiales bledna wartosc")
     exit()
