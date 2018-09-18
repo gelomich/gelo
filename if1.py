@@ -1,4 +1,4 @@
-liczba = input("Podaj liczne ")
+liczba = input("Podaj liczbe ")
 
 if liczba.isnumeric():
     liczba = int(liczba)
