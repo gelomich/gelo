@@ -21,4 +21,7 @@ print(greating[:10])
 print(greating[:])
 print(greating[:-2])
 
+sentence = "ala ma kota"
+print("ala" in sentence)
+
 
