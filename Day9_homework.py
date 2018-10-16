@@ -12,23 +12,24 @@ class Calculator:
         # ostatniej wykonanej operacji
         self._short_memory = None
 
-# Metoda
+# Metoda - drugi parametr
     def _second_param(self, param):
         return param if param is not None else self._memory
+#----
 
     def add(self, arg1, arg2=None):
         self._short_memory = arg1 + self._second_param(arg2)
         return self._short_memory
 
-    def sub(self, arg1, arg2):
+    def sub(self, arg1, arg2=None):
         self._short_memory = arg1 - self._second_param(arg2)
         return self._short_memory
 
-    def mul(self, arg1, arg2):
+    def mul(self, arg1, arg2=None):
         self._short_memory = arg1 * self._second_param(arg2)
         return self._short_memory
 
-    def div(self, arg1, arg2):
+    def div(self, arg1, arg2=None):
         # TODO: obsłuż dzielenie przez zero
         # FIXME
         self._short_memory = arg1 / self._second_param(arg2)
